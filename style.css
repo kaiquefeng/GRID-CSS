@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(11, 10, 13);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-areas: "h h" "m m" "f1 f2";
+  }
+  
+  
+  header {
+    background: yellow;
+    grid-area: h;
+    align-self: center;
+    justify-self: end;
+    color: #fff;
+    
+  
+  }
+  
+  main {
+    grid-area: m;
+    align-self: center;
+    justify-self: center;
+  
+  }
+  
+  aside {
+    margin: 0;
+    grid-area: f1;
+    justify-self: end;
+  
+  }
+  
+  footer {
+    grid-area: f2;
+    justify-self: start;
+  
+  }
+  
+  img {
+    display: grid;
+    justify-content: center;
+    
+  }
+  
+  .one {
+    padding: 30px 110px 30px 110px;
+    margin: 20px;
+    border-radius: 8px;
+    background: rgb(4, 211, 97);
+    border: 0;
+    color: #fff;
+    font-size: 19px;
+    
+    transition: all .2s ease-in-out;
+  }
+  
+  .one:hover {
+    padding: 30px 110px 30px 110px;
+    margin: 20px;
+    border-radius: 8px;
+    background: rgb(105, 120, 255);
+    border: 0;
+    
+    transform: scale(1.1); 
+  
+  }
+  
+  .two {
+    padding: 30px 110px 30px 110px;
+    margin: 20px;
+    border-radius: 8px;
+     background: rgb(105, 120, 255);
+    border: 0;
+    color: #fff;
+    font-size: 19px;
+    
+    transition: all .2s ease-in-out;
+    
+  }
+  
+  .two:hover {
+    padding: 30px 110px 30px 110px;
+    margin: 20px;
+    border-radius: 8px;
+    background: rgb(4, 211, 97);
+    border: 0;
+    
+    transform: scale(1.1); 
+  
+  }
+  
